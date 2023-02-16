@@ -2,7 +2,7 @@ from format_otr.export_txt import get_txt
 from pathlib import Path
 
 input_path = './tests/data/test_1.otr'
-expected_out = Path('./tests/data/expected/txt/test_1.txt').read_text(encoding='utf8')
+expected_out = Path('./tests/data/expected/txt/expected_txt.txt').read_text(encoding='utf8')
 
 
 def test_get_txt():
