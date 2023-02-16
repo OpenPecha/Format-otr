@@ -26,7 +26,6 @@ jobs:
       run: |
         pip install -U pip
         pip install .
-        pip install bs4
         pip install .[dev]
         
     - name: Test with pytest

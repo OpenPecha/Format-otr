@@ -1,6 +1,5 @@
-from bs4 import BeautifulSoup
+from format_otr.utils import get_json_from_file, parse_html, get_all_timestamps
 from pathlib import Path
-import json
 
 
 def get_text_between(start, end):
@@ -20,18 +19,6 @@ def get_text_till_end(start):
             text += tag.text
         tag = tag.next_element
     return text
-
-def get_json_from_file(file):
-    otr_file_contents = file.read_text()
-    otr_json = json.loads(otr_file_contents)
-    return otr_json
-
-def parse_html(html):
-    soup = BeautifulSoup(html, 'html.parser')
-    return soup
-
-def get_all_timestamps(soup):
-    return soup.findAll('span', {'class': 'timestamp'})
 
 def get_txt(file_path_to_otr):
     otr_file = Path(file_path_to_otr)
