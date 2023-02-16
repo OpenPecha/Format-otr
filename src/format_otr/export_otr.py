@@ -1,8 +1,6 @@
 from format_otr.utils import get_json_from_file, parse_html, get_all_timestamps
 from pathlib import Path
 
-import sys
-
 
 def get_text_between(start, end):
     text = ""
@@ -36,9 +34,3 @@ def get_txt(file_path_to_otr):
     # \xa0 is non-breaking space. Replace it with space.
     txt = txt.replace("\xa0", " ")
     return txt
-
-
-if __name__ == "__main__":
-    if len(sys.argv) > 1 and sys.argv[1][-4:] == ".otr":
-        # print(get_txt(sys.argv[1]))
-        # print(sys.argv[1])

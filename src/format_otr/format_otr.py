@@ -2,26 +2,10 @@ from pathlib import Path
 
 
 def add_breaks_on_timestamps(text):
-    """_summary_
-
-    Args:
-        text (_type_): _description_
-
-    Returns:
-        _type_: _description_
-    """
     return text.replace("<span", "<p><br /></p> <span")
 
 
 def remove_all_breaks(text):
-    """_summary_
-
-    Args:
-        text (_type_): _description_
-
-    Returns:
-        _type_: _description_
-    """
     return text.replace("<p><br /></p>", " ")
 
 
