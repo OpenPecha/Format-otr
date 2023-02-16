@@ -12,15 +12,14 @@
 
 ## Owner(s)
 
-- [@10zinten](https://github.com/10zinten)
+- [@spsither](https://github.com/spsither)
 
 ## RFXs
 
 Requests for work (RFWs) and requests for comments (RFCs) associated with this project:
 
-- [RFX name](#)
-- [RFX name](#)
-- [RFX name](#)
+- [RFW0026](https://github.com/OpenPecha/Requests/issues/70)
+- [RFC0026](https://github.com/OpenPecha/Format-otr/issues/4)
 
 ## Table of contents
 
@@ -38,37 +37,38 @@ Requests for work (RFWs) and requests for comments (RFCs) associated with this p
 
 ## Project description
 
-With _OpenPecha Project Template_ you can have a project with automatic code quality checker setup for you.
+This package is for formatting .otr file and Exporting it to other file types.
 
 ## Who this project is for
 
-This project is intended for _all the developers_ who wants to _meet the OpenPecha Code Quality Standard_.
+This project is for .otr reviewers and validator.
 
 ## Project dependencies
 
 Before using _OpenPecha Project Template_, ensure you have:
 
 - _python>=3.8_
+- _ps4>=0.0.1_
 
 ## Instructions for use
 
 Get started with _OpenPecha Project Template_ by refering to this [wiki](https://github.com/OpenPecha/Wiki/wiki/Coding-Guide-Line#project-setup)
 
-### Install _Project Name_
+### Install format_otr
 
 1.  [Use this template](https://github.com/OpenPecha/openpecha-project-template/generate)
 
-### Configure _Project Name_
+### Configure format_otr
 
 1. _Write the step here._
 2. _Write the step here._
 
-### Run _Project Name_
+### Run format_otr
 
 1. _Write the step here._
 2. _Write the step here._
 
-### Troubleshoot _Project Name_
+### Troubleshoot format_otr
 
 1. _Write the step here._
 2. _Write the step here._
@@ -136,4 +136,4 @@ For more information:
 
 ## Terms of use
 
-_Project Name_ is licensed under the [MIT License](/LICENSE.md).
+format_otr is licensed under the [MIT License](/LICENSE.md).
