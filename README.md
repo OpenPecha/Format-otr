@@ -37,7 +37,7 @@ This package is for formatting .otr file and Exporting it to other file types.
 
 ## Who this project is for
 
-This project is for .otr reviewers and validator.
+This project is for .otr reviewers and validator. This project is used to create the workflow for the [STT000 template](https://github.com/MonlamAI/STT000)
 
 ## Project dependencies
 
@@ -52,7 +52,7 @@ Before using _OpenPecha Project Template_, ensure you have:
 1.  install format-otr
   - `pip install git+https://github.com/OpenPecha/format-otr.git`
 
-### Run format_otr
+### Run format-otr
 
 1. to export a txt file from an otr file
   - `export-txt <path to otr file>`
