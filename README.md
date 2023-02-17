@@ -1,15 +1,11 @@
 # README
-
-> **Note:** This readme template is based on one from the [Good Docs Project](https://thegooddocsproject.dev). You can find it and a guide to filling it out [here](https://gitlab.com/tgdp/templates/-/tree/main/readme). (_Erase this note after filling out the readme._)
-
 <h1 align="center">
   <br>
   <a href="https://openpecha.org"><img src="https://avatars.githubusercontent.com/u/82142807?s=400&u=19e108a15566f3a1449bafb03b8dd706a72aebcd&v=4" alt="OpenPecha" width="150"></a>
   <br>
 </h1>
 
-## _OpenPecha Project Template_
-
+## format-otr
 ## Owner(s)
 
 - [@spsither](https://github.com/spsither)
@@ -48,85 +44,26 @@ This project is for .otr reviewers and validator.
 Before using _OpenPecha Project Template_, ensure you have:
 
 - _python>=3.8_
-- _ps4>=0.0.1_
+- _pip>=23.0_
 
 ## Instructions for use
+### Install format-otr
 
-Get started with _OpenPecha Project Template_ by refering to this [wiki](https://github.com/OpenPecha/Wiki/wiki/Coding-Guide-Line#project-setup)
-
-### Install format_otr
-
-1.  [Use this template](https://github.com/OpenPecha/openpecha-project-template/generate)
-
-### Configure format_otr
-
-1. _Write the step here._
-2. _Write the step here._
+1.  install format-otr
+  - `pip install git+https://github.com/OpenPecha/format-otr.git`
 
 ### Run format_otr
 
-1. _Write the step here._
-2. _Write the step here._
-
-### Troubleshoot format_otr
-
-1. _Write the step here._
-2. _Write the step here._
-
-<table>
-  <tr>
-   <td>
-    Issue
-   </td>
-   <td>
-    Solution
-   </td>
-  </tr>
-  <tr>
-   <td>
-    _Describe the issue here_
-   </td>
-   <td>
-    _Write solution here_
-   </td>
-  </tr>
-  <tr>
-   <td>
-    _Describe the issue here_
-   </td>
-   <td>
-    _Write solution here_
-   </td>
-  </tr>
-  <tr>
-   <td>
-    _Describe the issue here_
-   </td>
-   <td>
-    _Write solution here_
-   </td>
-  </tr>
-</table>
-
-Other troubleshooting supports:
-
-- _Link to FAQs_
-- _Link to runbooks_
-- _Link to other relevant support information_
+1. to export a txt file from an otr file
+  - `export-txt <path to otr file>`
+2. format an otr file
+  - `format-otr <path to otr file>`
 
 ## Contributing guidelines
 
 If you'd like to help out, check out our [contributing guidelines](/CONTRIBUTING.md).
 
-## Additional documentation
 
-_Include links and brief descriptions to additional documentation._
-
-For more information:
-
-- [Reference link 1](#)
-- [Reference link 2](#)
-- [Reference link 3](#)
 
 ## How to get help
 
