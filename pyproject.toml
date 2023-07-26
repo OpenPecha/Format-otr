@@ -23,6 +23,7 @@ dependencies = [
 [project.scripts]
 export-txt = "format_otr.export_otr:main_cli"
 format-otr = "format_otr.format_otr:main_cli"
+summary-otr = "format_otr.summary_otr:main_cli"
 
 [project.optional-dependencies]
 dev = [

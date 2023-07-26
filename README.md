@@ -54,10 +54,12 @@ Before using _OpenPecha Project Template_, ensure you have:
 
 ### Run format-otr
 
-1. to export a txt file from an otr file
-  - `export-txt <path to otr file>`
+1. to export a txt file from an otr file with syllable count per-line
+  >`export-txt <path to otr file>`
 2. format an otr file
-  - `format-otr <path to otr file>`
+  >`format-otr <path to otr file>`
+3. get total syllable count of an otr file
+  >`summary-otr <path to otr file>`
 
 ## Contributing guidelines
 
