@@ -28,11 +28,10 @@ def get_txt(file_path_to_otr):
     json_otr = get_json_from_file(otr_file)
     soup = parse_html(json_otr["text"])
     timestamps = get_all_timestamps(soup)
-    delimiters = ['་', '།',]
     txt = ""
     for start, end in zip(timestamps, timestamps[1:]):
-        txt += f"{start.string}, {get_syllable_count(get_text_between(start, end).strip(), delimiters)}, {get_text_between(start, end).strip()}\n"
-    txt += f"{timestamps[-1].string}, {get_syllable_count(get_text_between(start, end).strip(), delimiters)}, {get_text_till_end(timestamps[-1]).strip()}"
+        txt += f"{start.string}, {get_syllable_count(get_text_between(start, end).strip())}, {get_text_between(start, end).strip()}\n"
+    txt += f"{timestamps[-1].string}, {get_syllable_count(get_text_till_end(timestamps[-1]).strip())}, {get_text_till_end(timestamps[-1]).strip()}"
     # \xa0 is non-breaking space. Replace it with space.
     txt = txt.replace("\xa0", " ")
     return txt

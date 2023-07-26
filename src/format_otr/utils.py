@@ -16,8 +16,8 @@ def parse_html(html):
 def get_all_timestamps(soup):
     return soup.findAll("span", {"class": "timestamp"})
 
-def get_syllable_count(text, delimiters):
+def get_syllable_count(text):
     """Return the number of syllables in a text."""
-    pattern = '|'.join(map(re.escape, delimiters))
-    syls = re.split(pattern, text)
+    syls = re.split(r'་|།|\s+|\n+', text)
+    syls = [syl for syl in syls if syl != '']
     return len(syls)
