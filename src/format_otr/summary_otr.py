@@ -36,5 +36,7 @@ def total_syllable_count(file_path_to_otr):
 
 
 def main_cli():
-    if len(sys.argv) > 1 and sys.argv[1][-4:] == ".otr":
-        print(total_syllable_count(sys.argv[1]))
+    if len(sys.argv) > 1:
+        for file_path in sys.argv[1:]:
+             if file_path[-4:] == ".otr":
+                print(file_path, total_syllable_count(file_path))
